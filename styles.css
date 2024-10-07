@@ -1,0 +1,198 @@
+body {
+    background: linear-gradient(135deg, #1b1b1b, #004B87); /* Gradiente azul */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #1b1b1b, #004B87); /* Gradiente azul */
+    color: #AEC6CF; 
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+}
+
+header h1 {
+    text-align: left; /* Alinha o texto do cabeçalho à esquerda */
+    padding: 1rem; /* Adiciona espaço interno ao cabeçalho */
+}
+
+/* Navegação */
+nav ul {
+    display: flex;
+    flex-direction: row; 
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+nav ul li {
+    list-style: none; /* Remove os marcadores da lista não ordenada */
+    margin: 0 0.5rem; /* Adiciona espaço entre os botões */
+}
+
+nav ul li a {
+    display: block; /* Garante que cada link ocupe toda a largura */
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+nav ul li a:hover {
+    color: #82cded; /* Cor do fundo ao passar o mouse */
+}
+
+main {
+    background: linear-gradient(135deg, #1b1b1b, #004B87); /* Gradiente azul */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+}
+
+h2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro e semitransparente */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    color: #013A63; /* Cor do texto */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    animation: fadeIn 1s ease-in-out; /* Animação ao aparecer */
+}
+
+p {
+    animation: fadeIn 1s ease-in-out; /* Animação ao aparecer */
+}
+
+b {
+    animation: fadeIn 1s ease-in-out; /* Animação ao aparecer */
+}
+
+img {
+    animation: fadeIn 1s ease-in-out; /* Animação ao aparecer */
+}
+
+.text-container {
+    max-width: 1100px; /* Define a largura máxima do container */
+    width: 90%; /* Largura padrão em porcentagem */
+    margin: 1rem auto; /* Centraliza o container horizontalmente */
+    padding: 1rem; /* Espaçamento interno do container */
+    background-color: #4b4e62; /* Cor de fundo do container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra do container */
+    animation: fadeIn 1s ease-in-out; /* Animação ao aparecer */
+}
+
+p {
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.5; 
+    font-size: 1rem; 
+    color: #e5effc; 
+}
+
+b {
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.5; 
+    font-size: 1rem; 
+    color: #e5effc; 
+}
+
+img {
+    display: block; 
+    margin: 20px auto; 
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center; /* Centraliza os vídeos horizontalmente */
+    flex-wrap: wrap; /* Permite que os vídeos sejam quebrados em várias linhas se não couberem na tela */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    margin: 5rem 0; /* Margem superior e inferior */
+}
+
+.video-container {
+    flex: 1; /* Permite que os containers dos vídeos se expandam */
+    min-width: 300px; /* Largura mínima para cada vídeo */
+    max-width: 400px; /* Largura máxima para cada vídeo */
+    background-color: #2b2e38; /* Cor de fundo para destacar cada vídeo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    margin: 1rem; /* Margem para separar os vídeos */
+    padding: 1rem; /* Espaçamento interno para o conteúdo do vídeo */
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #004B87; /* Gradiente azul */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #013A63;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #A7C7E7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: #0087b1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f88;
+}
+
+footer {
+    text-align: center;
+    width: auto ; /* Define a largura máxima do container */
+    width: 100%; /* Largura padrão em porcentagem */
+    margin: auto; /* Centraliza o container horizontalmente */
+    padding: auto; /* Espaçamento interno do container */
+    background: linear-gradient(135deg, #1b1b1b, #004B87); /* Gradiente azul */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra do container */
+}
